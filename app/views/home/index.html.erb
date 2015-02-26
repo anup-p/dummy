@@ -1,0 +1,10 @@
+<%if user_signed_in? %>
+	<%= link_to "LogOut",destroy_user_session_path, method: :delete %>
+<%else%>
+	<%= link_to "SignUp",new_user_registration_path %><br /><br />
+	<%= link_to "SignUp Facebook", user_omniauth_authorize_path(:facebook) %><br /><br />
+	<%= link_to "SignUp Twitter", user_omniauth_authorize_path(:twitter) %><br /><br />
+	<%= link_to "SignUp Linkedin", user_omniauth_authorize_path(:linkedin) %><br /><br />
+	<%= link_to "SignUp Google", user_omniauth_authorize_path(:google_oauth2) %><br /><br />
+	<%= link_to "SignUp Windowslive", user_omniauth_authorize_path(:windowslive)%>
+<%end%>

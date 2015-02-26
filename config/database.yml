@@ -1,0 +1,21 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: dummy_development
+  username: root
+  password:
+  socket: /opt/lampp/var/mysql/mysql.sock
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: dummy_test
+  username: root
+  password:
+  socket: /opt/lampp/var/mysql/mysql.sock
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: dummy_production
+  username: root
+  password:
+  socket: /opt/lampp/var/mysql/mysql.sock
